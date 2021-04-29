@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://14.18.109.223:3306/retz
+    username: root
+    password: 1234
+  mail:
+    host: smtp.qq.com
+    username: 1228546077@qq.com
+    password: hcsumvtafsjphgag
+    from: 1228546077@qq.com
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+logging:
+  level:
+    com.amarsoft.retz.mapper: debug
+server:
+  port: 5000
