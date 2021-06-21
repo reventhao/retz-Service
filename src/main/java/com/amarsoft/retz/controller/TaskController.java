@@ -35,7 +35,7 @@ public class TaskController {
 
     @GetMapping
     public CommonResult<Page<Task>> queryPage(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
-                                              @RequestParam(value = "pageSize", defaultValue = "1") Integer pageSize) {
+                                              @RequestParam(value = "pageSize", defaultValue = "10") Integer pageSize) {
         return CommonResult.success(taskService.queryPage(pageNum, pageSize));
     }
 
